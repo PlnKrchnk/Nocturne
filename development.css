@@ -1,0 +1,175 @@
+.development{
+    margin-bottom: 200px;
+}
+
+.development-game-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    border-left: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.development__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.development-game-wrapper {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    width: 65%;
+    
+    padding-left: 2rem;
+}
+
+.development-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+.development-text{
+    position: relative;
+
+    font-size: 1.6rem;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+
+.development-slider-arrow{
+    display: flex;
+    justify-content: flex-end;
+
+    background: none;
+    border: none;
+    padding: 0;
+
+    cursor: pointer;
+
+    margin-top: 4rem; 
+
+    opacity: 0.8;
+    transition: opacity .2s linear;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.development-photo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-left: 3rem;
+}
+
+.development-title{
+    font-size: 1.6rem;
+    color: var(--primary);
+
+    background-image: url(../images/development-container/development-ask.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 2.5rem 9.5rem;
+
+
+    opacity: 0.8;
+    transition: opacity .2s linear;
+
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.development-game-info{
+    margin-top: 12.1rem;
+}
+
+.development-game-title{
+    font-size: 2.8rem;
+    color: var(--secondary);
+}
+
+.development-game-text{
+    font-size: 1.6rem;
+    color: var(--secondary);
+}
+
+.development-game-paragraph{
+    margin-bottom: 1rem;
+}
+
+.development-game-decor{
+    position: absolute;
+    bottom: -1.5rem;
+    margin-left: -1.8rem;
+}
+
+.development_container-mobile{
+    display: none;
+}
+
+
+@media (max-width: 430px){
+
+    .development{
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 8rem;
+    }
+
+    .development-game-info{
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+
+    .development-game-wrapper{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .development-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .development_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .development-title,
+    .development-text{
+        display: none;
+    }
+
+   .development-game-wrapper,
+   .development-game-info{
+        border-left: none;
+
+        text-shadow:
+        0 0 4px rgba(255,255,255,0.9),
+        0 0 8px rgba(255,255,255,0.8),
+        0 0 16px rgba(255,255,255,0.6),
+        0 0 32px rgba(255,255,255,0.4);
+    }
+
+    .development_carousel{
+        display: flex;
+        justify-content: center;
+    }
+}
