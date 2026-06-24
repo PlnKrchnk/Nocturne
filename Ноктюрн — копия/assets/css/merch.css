@@ -1,0 +1,47 @@
+.merch{
+    min-height: auto;
+    height: auto;
+
+    margin-bottom: 100px;
+}
+
+.merch-title{
+    margin-bottom: 100px;
+    
+}
+
+.merch-atribute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 6.4rem;
+    color: var(--primary);
+
+    background-image: url(../images/merch-container/merch-title.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 52.5rem;
+    height: 11.1rem;
+}
+
+@media (max-width: 480px) {
+    .merch{
+        height: auto;
+        margin-bottom: 8rem;
+    }
+
+    .merch-atribute{
+        font-size: 3.2rem;
+
+        width: 26.2rem;
+        height: 5.5rem;
+    }
+
+    .merch-title{
+        margin-bottom: 0.5rem;
+    }
+    
+}

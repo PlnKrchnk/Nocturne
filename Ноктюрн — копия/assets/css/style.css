@@ -1,0 +1,129 @@
+@import 'header.css';
+@import 'nav.css';
+@import 'hero.css';
+@import 'development.css';
+@import 'merch.css';
+@import 'roulette.css';
+@import 'catalog.css';
+@import 'footer.css';
+@import 'burger-btn.css';
+
+:root{
+    --primary: #fff;
+    --secondary: #000;
+    --footer: #323463;
+}
+
+html{
+    font-size: 62.5%;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Underdog", system-ui;
+    font-style: normal;
+    font-size: 1.6rem;
+
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    overflow-x: hidden; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container{    
+    min-height: 1085px;
+
+    width: 100%;
+
+    padding: 2rem;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+    width: 70px;
+    height: 70px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 24px;
+
+    cursor: pointer;
+
+    display: none; /* скрыта до прокрутки */
+
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.2s ease;
+    z-index: 1000;
+}
+
+.scroll-top:hover {
+    transform: translateY(-3px);
+}
+
+
+
+/* АДАПТИВ */
+
+@media (max-width: 480px){
+    html {
+        font-size: 50%;
+    }
+
+    body {
+        background-image: url(../images/background-mob-4.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 100%;
+        padding: 4rem 2rem 0 2rem;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    img {
+        max-width: 70%;
+        height: auto;
+        display: block;
+    }
+
+    .scroll-top{
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+
+        right: 30px;
+        bottom: 100px;
+    }
+}

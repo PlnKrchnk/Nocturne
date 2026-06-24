@@ -1,0 +1,54 @@
+.nav{
+    display: flex;
+    justify-content: flex-start;
+
+    padding-top: 4.7rem;
+    padding-left: 1.7rem;
+}
+
+.nav_item{
+    padding: 2.5rem 7.7rem;
+    background-image: url(/assets/images/nav-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-size: 2rem;
+    color: var(--primary);
+    text-decoration: none;
+
+    cursor: pointer;
+
+    opacity: 0.8;
+    transition: opacity .2s linear;
+
+
+    &:hover{
+        opacity: 1;
+    }
+
+}
+
+
+@media (max-width: 881px) {
+    .nav {
+        display: none; 
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.95);
+        padding: 1rem;
+    }
+
+    .nav_item{
+        background-image: none;
+    }
+    
+    .nav.active {
+        display: flex;
+
+        margin-top: 2rem;
+    }
+}

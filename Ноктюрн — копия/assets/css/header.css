@@ -1,0 +1,45 @@
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.header-icon{
+    padding-top: 19.3rem;
+    padding-left: 18.4rem;
+}
+
+.header-text{
+    color: var(--secondary);
+    font-size: 2rem;
+
+    margin-top: auto;
+
+    padding-left: 2rem;
+    padding-bottom: 6rem;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 480px){
+    header{
+        height: auto;
+    }
+    
+    .header-icon{
+        padding: 15rem 0 0 7rem;
+
+        text-align: center;
+    }
+
+    .header-text{
+        bottom: 0;
+
+        text-shadow:
+        0 0 4px rgba(255,255,255,0.9),
+        0 0 8px rgba(255,255,255,0.8),
+        0 0 16px rgba(255,255,255,0.6),
+        0 0 32px rgba(255,255,255,0.4);
+
+        text-align: center;
+    }
+}
